@@ -6,6 +6,7 @@ import './js/animations';
 import './js/nav';
 import './js/about';
 import './js/gallery';
+import './js/smoothScroll';
 //import './js/scroll';
 
 /*gsap.registerPlugin(ScrollTrigger);
@@ -20,3 +21,4 @@ gsap.to(".about p", {
     duration: 2, 
     rotation: 360
 });*/
+

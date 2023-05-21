@@ -13,16 +13,16 @@
         <button class="header__mobile_nav_toggle" aria-controls="header__navigation" aria-expanded="false">
             <span class="header__menu sr-only">Menu</span>
         </button>
-        <nav>
+        <nav data-scroll-header>
             <ul id="header__navigation" data-visible="false" class="header__navigation">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a data-scroll href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
     </header>
-    <div class="loader">
+    <!--<div class="loader">
         <div class="loader__clip loader__clip-top">
             <div class="clip__marquee">
                 <div class="marquee__container">
@@ -56,10 +56,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     
-    <div class="container"> 
-        <section class="home wrapper x-lock">
+    <div class="container smooth-wrapper"> 
+        <section class="home wrapper x-lock" id="home">
             <div class="home__text"><span>PAC 2 PAK</span></div>
             
             <div class="home__kangooroo">
@@ -72,7 +72,7 @@
                 <img src="./img/dino.png" alt="">
             </div>
         </section>
-        <section class="about wrapper">
+        <section class="about wrapper" id="about">
                 <div class="about-text">
                     <div class="about__accord">
                         <div class="accord-item accord-item--active">
@@ -116,7 +116,7 @@
                     <img class="about__image" src="./img/about_img5.png" alt="">
                 </div>
         </section>
-        <section class="gallery wrapper">
+        <section class="gallery wrapper" id="gallery">
             <div class="gallery__container scrollx">
                 <div class="gallery__section s1">
                     <img class="gallery__image i1 anim" src="./img/gallery/Ellipse 12.png" alt="">
@@ -140,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts wrapper">
+        <section class="contacts wrapper" id="contacts">
             <div class="contacts__container">
                 <h1 class="contacts__header">contact us</h1>
                 <p>Meet us here:</p>
@@ -154,6 +154,5 @@
             
         </section>
     </div> 
-
 </body>
 </html>

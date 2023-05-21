@@ -116,9 +116,9 @@ gsap.to('.home__lion', 1, {
 });
 
 gsap.to('.home__dino', 3, {
-    delay: 7,
+    delay: 5,
     top: '70%',
-    ease: 'bounce.out'
+    ease: 'power3.in'
 });
 
 gsap.registerPlugin(ScrollTrigger);
