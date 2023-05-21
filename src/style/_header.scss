@@ -1,0 +1,107 @@
+.header {
+    height: 8vh;
+    width: 100%;
+    top: -8vh;
+    position: fixed;
+    display: flex;
+    font-family: 'Comfortaa';
+    align-items: center;
+    z-index: 1000;
+    background-color: $bgMain;
+}
+
+nav {
+    width: 100vw;
+}
+
+.header__logo {
+    height: 3em;
+    padding: 0 2em;
+    opacity: 0;
+}
+
+.header__navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background: $bgContact;
+    z-index: 1000;
+    inset: 0;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+    & li {
+        padding: 1em 1em;
+        font-size: 2em;
+        opacity: 0;
+    }
+}
+
+.header__navigation[data-visible="true"] {
+    transform: translateX(0%);
+}
+
+.header__mobile_nav_toggle {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    background-image: url("./img/hamburger.svg");
+    background-repeat: no-repeat;
+    width: 2rem;
+    aspect-ratio: 1;
+    border: 0;
+    right: 2em;
+    z-index: 9999;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.header__mobile_nav_toggle[aria-expanded="true"] {
+    background-image: url("./img/cross.svg");
+}
+
+@media (min-width: 35em) {
+    .header {
+        height: 6vh;
+    }
+    .header__logo {
+        padding: 0 4em;
+        //width: 240px;
+    }
+    .header__navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 4em 0 0;
+        height: 6vh;
+        transform: translateX(0);
+
+        background: none;
+        & li {
+                padding: 1em 1em;
+                font-size: 1em;
+            }
+        & li:last-child {
+            padding:  1em 0;
+        }
+    }
+    .header__mobile_nav_toggle{
+        display: none;
+    }
+}
+
+a {
+    color: $primalText;
+}
+a.active,a:hover {
+    color: $subText;
+    border-bottom: 1px solid $subText;
+    transition: .5s;
+}
+
+
+

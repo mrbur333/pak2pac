@@ -1,0 +1,64 @@
+.loader {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+
+.loader__clip {
+    position: absolute;
+    width: 100vw;
+    height: 33.3vh;
+    overflow: clip;
+    z-index: 100;
+}
+
+.loader__clip-top {
+    top: 0;
+    clip-path: inset(0 0 0 0);
+    background: $bgContact;
+}
+
+.loader__clip-bottom {
+    bottom: 0;
+    clip-path: inset(0 0 0 0);
+    background: $bgContact;
+}
+
+.loader__clip-center {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 33.3vh;
+    top: 33.3vh;
+    & .clip__marquee-center {
+        left: -250%;
+    }
+}
+
+.merquee__center {
+    opacity: 1; 
+}
+
+.merquee__center[data-visible="true"] {
+    opacity: 0; 
+}
+
+.clip__marquee {
+    position: relative;
+    top: 50%;
+    left: 250%;
+    transform: translate(-50%, -50%);
+    width: 220vw;
+    font-size: 8vw;
+}
+
+.marquee__container {
+    width: 100%;
+    //padding-top: 0.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Barrio';
+}
