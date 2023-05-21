@@ -16,6 +16,8 @@ navToggle.addEventListener('click', () => {
 
 navEl.forEach(link => {
     link.addEventListener('click', () => {
+        headerNav.setAttribute('data-visible', false);
+        navToggle.setAttribute('aria-expanded', false);
         if (link.classList.contains('active')) {
             link.classList.remove('active');
         } else {
