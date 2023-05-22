@@ -1,11 +1,12 @@
 .header {
     height: 8vh;
     width: 100%;
-    top: -8vh;
+    top: -12vh;
     position: fixed;
     display: flex;
     font-family: 'Comfortaa';
     align-items: center;
+    padding: 2em 0 2em 0;
     z-index: 1000;
     background-color: $bgMain;
 }
