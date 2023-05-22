@@ -139,28 +139,41 @@ gsap.to('.home__kangooroo,.home__lion,.home__dino', {
 
 //ABOUT
 
-let aboutTrigger = gsap.timeline({
+let aboutTriggerTB = gsap.timeline({
     scrollTrigger: {
         trigger: '.about',
         start: 'top bottom',
     }
 });
 
-let aboutTriggerAccord = gsap.timeline({
+let aboutTriggerTC = gsap.timeline({
     scrollTrigger: {
-        trigger: '.about__accord',
+        trigger: '.about',
         start: 'top center',
     }
 });
 
-aboutTrigger.from('.about__images', { x:1000, duration:1});
+aboutTriggerTB.from('.about__images', { x:1000, duration:1});
 
-aboutTriggerAccord.from('.accord-item:first-child', {y:'4em', display: "none", duration:0.3})
+aboutTriggerTC.from('.accord-item:first-child', {y:'4em', display: "none", duration:0.3})
             .from('.accord-item:nth-child(2)', {y:'4em', display: "none", duration:0.3})
             .from('.accord-item:nth-child(3)', {y:'4em', display: "none", duration:0.3})
             .from('.accord-item:nth-child(4)', {y:'4em', display: "none", duration:0.3})
             .from('.accord-item:nth-child(5)', {y:'4em', display: "none", duration:0.3});
 
+            gsap.to('.about__images', {
+                scrollTrigger: {
+                    scrub:1
+                },
+                y:-400,
+            });
+            
+            gsap.to('.about__accord', {
+                scrollTrigger: {
+                    scrub:1
+                },
+                y:-400,
+            });
 // CONTACTS
 
 let contactTrigger = gsap.timeline({
