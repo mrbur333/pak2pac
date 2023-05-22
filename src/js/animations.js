@@ -142,12 +142,20 @@ gsap.to('.home__kangooroo,.home__lion,.home__dino', {
 let aboutTrigger = gsap.timeline({
     scrollTrigger: {
         trigger: '.about',
+        start: 'top bottom',
+    }
+});
+
+let aboutTriggerAccord = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.about__accord',
         start: 'top center',
     }
 });
 
-aboutTrigger.from('.about__images', { x:1000, duration:1})
-            .from('.accord-item:first-child', {y:'4em', display: "none", duration:0.3})
+aboutTrigger.from('.about__images', { x:1000, duration:1});
+
+aboutTriggerAccord.from('.accord-item:first-child', {y:'4em', display: "none", duration:0.3})
             .from('.accord-item:nth-child(2)', {y:'4em', display: "none", duration:0.3})
             .from('.accord-item:nth-child(3)', {y:'4em', display: "none", duration:0.3})
             .from('.accord-item:nth-child(4)', {y:'4em', display: "none", duration:0.3})
