@@ -138,7 +138,7 @@ gsap.to('.home__kangooroo,.home__lion,.home__dino', {
 });
 
 //ABOUT
-
+/*
 let aboutTriggerTB = gsap.timeline({
     scrollTrigger: {
         trigger: '.about',
@@ -173,7 +173,225 @@ aboutTriggerTC.from('.accord-item:first-child', {y:'4em', display: "none", durat
                     scrub:1
                 },
                 y:-400,
-            });
+            });*/
+
+// GALLERY
+
+/*gsap.to('.i2', {
+    y: -200,
+    duration: 1,
+    ease: "easeOut",
+    scrollTrigger: {
+        trigger: ".i1",
+        toggleActions: "restart pouse reverse reverse",
+        markers: true,
+        start: 'center center',
+    }
+});*/
+
+gsap.to('.i1', {
+    scrollTrigger: {
+        trigger: '.i1',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: -30,
+    y:-100,
+});
+
+gsap.to('.i2', {
+    scrollTrigger: {
+        trigger: '.i1',
+        start: 'bottom center',
+        scrub:1
+    },
+    duration: 1,
+    rotate: 30,
+    y:-200,
+});
+
+gsap.to('.i3', {
+    scrollTrigger: {
+        trigger: '.i3',
+        start: 'bottom center',
+        scrub:1
+    },
+    duration: 1,
+    rotate: -30,
+    y:-100,
+});
+
+gsap.to('.i4', {
+    scrollTrigger: {
+        trigger: '.i3',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: 30,
+    y:-200,
+});
+
+gsap.to('.i5', {
+    scrollTrigger: {
+        trigger: '.i5',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: 30,
+    y:-100,
+});
+
+gsap.to('.i6', {
+    scrollTrigger: {
+        trigger: '.i5',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: -30,
+    y:-200,
+});
+
+gsap.to('.i7', {
+    scrollTrigger: {
+        trigger: '.i7',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: 30,
+    y:-100,
+});
+
+gsap.to('.i8', {
+    scrollTrigger: {
+        trigger: '.i7',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: -30,
+    y:-200,
+});
+
+gsap.to('.i9', {
+    scrollTrigger: {
+        trigger: '.i9',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: 30,
+    y:-100,
+});
+
+gsap.to('.i10', {
+    scrollTrigger: {
+        trigger: '.i9',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: -30,
+    y:-200,
+});
+
+gsap.to('.i11', {
+    scrollTrigger: {
+        trigger: '.i11',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: 30,
+    y:-100,
+});
+
+gsap.to('.i12', {
+    scrollTrigger: {
+        trigger: '.i11',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: -30,
+    y:-200,
+});
+
+gsap.to('.i13', {
+    scrollTrigger: {
+        trigger: '.i13',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: 30,
+    y:-100,
+});
+
+gsap.to('.i14', {
+    scrollTrigger: {
+        trigger: '.i13',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: -30,
+    y:-200,
+});
+
+gsap.to('.i15', {
+    scrollTrigger: {
+        trigger: '.i15',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: 30,
+    y:-100,
+});
+
+gsap.to('.i16', {
+    scrollTrigger: {
+        trigger: '.i15',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: -30,
+    y:-200,
+});
+
+gsap.to('.i17', {
+    scrollTrigger: {
+        trigger: '.i17',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: 30,
+    y:-100,
+});
+
+gsap.to('.i18', {
+    scrollTrigger: {
+        trigger: '.i17',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: -30,
+    y:-200,
+});
+
+gsap.to('.i19', {
+    scrollTrigger: {
+        trigger: '.i19',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: 30,
+    y:-100,
+});
+
+gsap.to('.i20', {
+    scrollTrigger: {
+        trigger: '.i19',
+        start: 'bottom center',
+        scrub:1
+    },
+    rotate: -30,
+    y:-200,
+});
+
+
 // CONTACTS
 
 let contactTrigger = gsap.timeline({

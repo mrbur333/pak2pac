@@ -33,7 +33,7 @@ sections.forEach((section) => {
         scrollTrigger: {
             trigger: section,
             start: "left center",
-            
+            //markers: true,
         }
     });
     /*gsap.to('.s1', {
