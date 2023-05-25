@@ -138,42 +138,61 @@ gsap.to('.home__kangooroo,.home__lion,.home__dino', {
 });
 
 //ABOUT
-/*
-let aboutTriggerTB = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.about',
-        start: 'top bottom',
-    }
-});
 
-let aboutTriggerTC = gsap.timeline({
+let aboutTriggerImg = gsap.timeline({
     scrollTrigger: {
         trigger: '.about',
         start: 'top center',
     }
 });
 
-aboutTriggerTB.from('.about__images', { x:1000, duration:1});
 
-aboutTriggerTC.from('.accord-item:first-child', {y:'4em', display: "none", duration:0.3})
-            .from('.accord-item:nth-child(2)', {y:'4em', display: "none", duration:0.3})
-            .from('.accord-item:nth-child(3)', {y:'4em', display: "none", duration:0.3})
-            .from('.accord-item:nth-child(4)', {y:'4em', display: "none", duration:0.3})
-            .from('.accord-item:nth-child(5)', {y:'4em', display: "none", duration:0.3});
+if (window.innerWidth < 960) {
+    let aboutTriggerText = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.about__image',
+            start: 'center center',
+            markers: true,
+        }   
+    });
+    aboutTriggerText.from('.accord-item:first-child', {y:'4em', display: "none", duration:0.3})
+        .from('.accord-item:nth-child(2)', {y:'4em', display: "none", duration:0.3})
+        .from('.accord-item:nth-child(3)', {y:'4em', display: "none", duration:0.3})
+        .from('.accord-item:nth-child(4)', {y:'4em', display: "none", duration:0.3})
+        .from('.accord-item:nth-child(5)', {y:'4em', display: "none", duration:0.3});   
+} else {
+    let aboutTriggerText = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.about',
+            start: 'top center',
+            markers: true,
+        }   
+    });
+    aboutTriggerText.from('.accord-item:first-child', {y:'4em', display: "none", duration:0.3})
+        .from('.accord-item:nth-child(2)', {y:'4em', display: "none", duration:0.3})
+        .from('.accord-item:nth-child(3)', {y:'4em', display: "none", duration:0.3})
+        .from('.accord-item:nth-child(4)', {y:'4em', display: "none", duration:0.3})
+        .from('.accord-item:nth-child(5)', {y:'4em', display: "none", duration:0.3}); 
+}   
+
+aboutTriggerImg.from('.about__images', { x:1000, duration:1});
+
+
+
 
             gsap.to('.about__images', {
                 scrollTrigger: {
                     scrub:1
                 },
-                y:-400,
+                y:-200,
             });
             
             gsap.to('.about__accord', {
                 scrollTrigger: {
                     scrub:1
                 },
-                y:-400,
-            });*/
+                y:-200,
+            });
 
 // GALLERY
 
