@@ -152,7 +152,6 @@ if (window.innerWidth < 960) {
         scrollTrigger: {
             trigger: '.about__image',
             start: 'center center',
-            markers: true,
         }   
     });
     aboutTriggerText.from('.accord-item:first-child', {y:'4em', display: "none", duration:0.3})
@@ -165,7 +164,6 @@ if (window.innerWidth < 960) {
         scrollTrigger: {
             trigger: '.about',
             start: 'top center',
-            markers: true,
         }   
     });
     aboutTriggerText.from('.accord-item:first-child', {y:'4em', display: "none", duration:0.3})
@@ -176,23 +174,19 @@ if (window.innerWidth < 960) {
 }   
 
 aboutTriggerImg.from('.about__images', { x:1000, duration:1});
-
-
-
-
-            gsap.to('.about__images', {
-                scrollTrigger: {
-                    scrub:1
-                },
-                y:-200,
-            });
+gsap.to('.about__images', {
+    scrollTrigger: {
+        scrub:1
+    },
+    y:-200,
+});
             
-            gsap.to('.about__accord', {
-                scrollTrigger: {
-                    scrub:1
-                },
-                y:-200,
-            });
+gsap.to('.about__accord', {
+    scrollTrigger: {
+        scrub:1
+    },
+    y:-200,
+});
 
 // GALLERY
 
