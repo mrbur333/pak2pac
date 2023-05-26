@@ -17,6 +17,7 @@
     & p {
         font-family: 'Comfortaa';
         font-size: x-large;
+        margin: 0.4em;
     }
 }
 
@@ -26,14 +27,14 @@
 
 .contacts__header { 
     font-family: 'Barrio';
-    font-size: xxx-large;   
+    font-size: 3em;   
 }
 
 .contacts__img--lion {
     position: absolute;
     width: 17em;
     border-radius: 50%;
-    inset: 26em 0 0 95em;
+    display: none;
 }
 
 .contacts__img--coroc {
@@ -42,4 +43,32 @@
     border-radius: 50%;
     inset: 28em -2em;
     transform: rotate(343deg);
+}
+
+@media (min-width: $tablet) {
+    .contacts__text {
+        height: 30vh;
+    }
+    .contacts__img--lion {
+        display: block;
+        inset: 26em 0 0 70vw;
+    }
+}
+
+@media (min-width: $laptop) {
+    .contacts__text {
+        height: 30vh;
+    }
+}
+
+@media (min-width: $desktop3) {
+    .contacts__header {
+        font-size: 5em; 
+    }
+
+    .contacts__container {
+        & p {
+            font-size: 2em;
+        }
+    }
 }

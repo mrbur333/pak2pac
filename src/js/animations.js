@@ -148,30 +148,34 @@ let aboutTriggerImg = gsap.timeline({
 
 
 if (window.innerWidth < 960) {
-    let aboutTriggerText = gsap.timeline({
+    gsap.from('.accord-item', {
+    y: '4em',
+    display: "none",
+    duration:0.5,
+    scrollTrigger: {
+        trigger: '.about__image',
+        start: 'bottom center',
+    }, 
+    stagger: {
+        each: 0.2,
+    }
+});
+} else {
+    gsap.from('.accord-item', {
+        y: '4em',
+        display: "none",
+        ease: "elastic",
         scrollTrigger: {
             trigger: '.about__image',
-            start: 'center center',
-        }   
-    });
-    aboutTriggerText.from('.accord-item:first-child', {y:'4em', display: "none", duration:0.3})
-        .from('.accord-item:nth-child(2)', {y:'4em', display: "none", duration:0.3})
-        .from('.accord-item:nth-child(3)', {y:'4em', display: "none", duration:0.3})
-        .from('.accord-item:nth-child(4)', {y:'4em', display: "none", duration:0.3})
-        .from('.accord-item:nth-child(5)', {y:'4em', display: "none", duration:0.3});   
-} else {
-    let aboutTriggerText = gsap.timeline({
-        scrollTrigger: {
-            trigger: '.about',
             start: 'top center',
-        }   
+        }, 
+        stagger: {
+            each: 0.25,
+        }
     });
-    aboutTriggerText.from('.accord-item:first-child', {y:'4em', display: "none", duration:0.3})
-        .from('.accord-item:nth-child(2)', {y:'4em', display: "none", duration:0.3})
-        .from('.accord-item:nth-child(3)', {y:'4em', display: "none", duration:0.3})
-        .from('.accord-item:nth-child(4)', {y:'4em', display: "none", duration:0.3})
-        .from('.accord-item:nth-child(5)', {y:'4em', display: "none", duration:0.3}); 
-}   
+} 
+
+
 
 aboutTriggerImg.from('.about__images', { x:1000, duration:1});
 gsap.to('.about__images', {
@@ -188,224 +192,8 @@ gsap.to('.about__accord', {
     y:-200,
 });
 
-// GALLERY
-
-/*gsap.to('.i2', {
-    y: -200,
-    duration: 1,
-    ease: "easeOut",
-    scrollTrigger: {
-        trigger: ".i1",
-        toggleActions: "restart pouse reverse reverse",
-        markers: true,
-        start: 'center center',
-    }
-});*/
-
-gsap.to('.i1', {
-    scrollTrigger: {
-        trigger: '.i1',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: -30,
-    y:-100,
-});
-
-gsap.to('.i2', {
-    scrollTrigger: {
-        trigger: '.i1',
-        start: 'bottom center',
-        scrub:1
-    },
-    duration: 1,
-    rotate: 30,
-    y:-200,
-});
-
-gsap.to('.i3', {
-    scrollTrigger: {
-        trigger: '.i3',
-        start: 'bottom center',
-        scrub:1
-    },
-    duration: 1,
-    rotate: -30,
-    y:-100,
-});
-
-gsap.to('.i4', {
-    scrollTrigger: {
-        trigger: '.i3',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: 30,
-    y:-200,
-});
-
-gsap.to('.i5', {
-    scrollTrigger: {
-        trigger: '.i5',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: 30,
-    y:-100,
-});
-
-gsap.to('.i6', {
-    scrollTrigger: {
-        trigger: '.i5',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: -30,
-    y:-200,
-});
-
-gsap.to('.i7', {
-    scrollTrigger: {
-        trigger: '.i7',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: 30,
-    y:-100,
-});
-
-gsap.to('.i8', {
-    scrollTrigger: {
-        trigger: '.i7',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: -30,
-    y:-200,
-});
-
-gsap.to('.i9', {
-    scrollTrigger: {
-        trigger: '.i9',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: 30,
-    y:-100,
-});
-
-gsap.to('.i10', {
-    scrollTrigger: {
-        trigger: '.i9',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: -30,
-    y:-200,
-});
-
-gsap.to('.i11', {
-    scrollTrigger: {
-        trigger: '.i11',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: 30,
-    y:-100,
-});
-
-gsap.to('.i12', {
-    scrollTrigger: {
-        trigger: '.i11',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: -30,
-    y:-200,
-});
-
-gsap.to('.i13', {
-    scrollTrigger: {
-        trigger: '.i13',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: 30,
-    y:-100,
-});
-
-gsap.to('.i14', {
-    scrollTrigger: {
-        trigger: '.i13',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: -30,
-    y:-200,
-});
-
-gsap.to('.i15', {
-    scrollTrigger: {
-        trigger: '.i15',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: 30,
-    y:-100,
-});
-
-gsap.to('.i16', {
-    scrollTrigger: {
-        trigger: '.i15',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: -30,
-    y:-200,
-});
-
-gsap.to('.i17', {
-    scrollTrigger: {
-        trigger: '.i17',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: 30,
-    y:-100,
-});
-
-gsap.to('.i18', {
-    scrollTrigger: {
-        trigger: '.i17',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: -30,
-    y:-200,
-});
-
-gsap.to('.i19', {
-    scrollTrigger: {
-        trigger: '.i19',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: 30,
-    y:-100,
-});
-
-gsap.to('.i20', {
-    scrollTrigger: {
-        trigger: '.i19',
-        start: 'bottom center',
-        scrub:1
-    },
-    rotate: -30,
-    y:-200,
-});
-
-
 // CONTACTS
+
 
 let contactTrigger = gsap.timeline({
     scrollTrigger: {
@@ -414,9 +202,11 @@ let contactTrigger = gsap.timeline({
     }
 });
 
+
 contactTrigger.from('.contacts__header', { y:'4em', display: "none", duration:0.3})
             .from('p:nth-child(2)', {y:'4em', display: "none", duration:0.3})
             .from('p:nth-child(3)', {y:'4em', display: "none", duration:0.3})
             .from('p:nth-child(4)', {y:'4em', display: "none", duration:0.3})
             .from('p:nth-child(5)', {y:'4em', display: "none", duration:0.3})
-            .from('.contacts__img--coroc', {x:'-15em',y:'5em', display: "none", duration:1})
+            .from('.contacts__img--coroc', {x:'-15em', y:'5em', display: "none", duration:1})
+            .from('.contacts__img--lion', {x:'15em', y:'-15em', display: "none", duration:1})

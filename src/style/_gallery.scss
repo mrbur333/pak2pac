@@ -6,6 +6,7 @@
     height: auto;
     background-color: $bgGallery;
     top:10em;
+    overflow-x: hidden;  
 }
 
 .gallery__container {
@@ -28,16 +29,6 @@
 
 
 .gallery__image {
-    height: auto;
-    display: block;
-    position: relative;
-    top: auto;
-    left: auto;
-    bottom: auto;
-    right: auto;
-    -webkit-transform: none;
-    transform: none;
-    //margin: 0 auto;
     width: 40vw;
 }
 
@@ -51,105 +42,57 @@
     z-index: 2;
 }
 
-@media (min-width: 35em) { 
+@media (min-width: 425px) { 
+    .gallery__section {
+        max-height: 85vh;
+    }
+}
+
+@media (min-width: $tablet) { 
+    .gallery__image {
+        width: 30vw;
+    }
+}
+
+@media (min-width: $laptop) { 
     .gallery { 
         position: relative;
-        flex-direction: row;
-        overflow-x: hidden;
-        
+        flex-direction: row;    
     }
 
     .gallery__container {
         display: flex;
-        flex-direction: unset;
-        width: 400vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 800vw;
+        padding: 0 0 0 30vw;
+
     }
 
     .gallery__section {
-        width: 100vw;
-        position: relative;
-        padding: 30vw 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
     }
 
     .gallery__image {
-
+        height: auto;
+        display: block;
+        position: relative;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        right: auto;
+        -webkit-transform: none;
+        transform: none;
+        margin: 0 1em;
+        width: 20vw;
     }
 
-    /*.i1 {
-        z-index: 3;
-        top: -30vh;
-        left: -30vw
-    }*/
-    
-    .i2 {
-        width: 35vh;
-        height: 35vh;
-        margin: 10vh 0 0 22vw;
-        z-index: 2;
-    }
-    
-    .i4 {
-        width: 48.2vh;
-        height: 68vh;
-        margin: -40vh 0 0 75vh;
-    }
-    
-    .i5 {
-        width: 30vh;
-        height: 30vh;
-        margin: 36vh 0 0 55vw;
-        z-index: 5;
-    }
-    
-    .i6 {
-        margin: -80vh 0 0 15vw;
-    }
-    
-    .i7 {
-        width: 50%;
-        height: 60.17vw;
-        margin: 0vw 0 0 19.5vw;
-    }
-    
-    .i8 {
-        width: 50%;
-        height: 32vw;
-        margin: -15vh 0 0 -25.5vw;
-    }
-    
-    .i9 {
-        margin: 8.5vw 0 0 0;
-        height: 34.78vw;
-    }
-    
-    .i10 {
-        width: 60%;
-        margin: -68.5vw 0 10vw 18.5vw;
-        z-index: 2;
-        height: 38vw;
-    }
-    
-    .i11 {
-        width: 35%;
-        margin: 5vw 0 0 2.5vw;
-        z-index: 1;
-        height: 35vw;
-    }
-    
-    .i12 {
-        width: 60%;
-        margin: -49vw 0 0 23.5vw;
-        height: 30vw;
-    }
-    
-    .i13 {
-        width: 30%;
-        margin: -30vh 0 0 -30vw;
-        height: 30vw;
-        z-index: 3;
+    section.gallery {
+        height: 100vh;
     }
 }
 
-section {
-    height: 100vh;
-}
