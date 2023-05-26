@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="Image/x-icon" href="./img/favicon.ico" rel="icon">
     <title>Pac 2 pak</title>
 </head>
 <body>
@@ -63,13 +64,25 @@
             <div class="home__text"><span>PAC 2 PAK</span></div>
             
             <div class="home__kangooroo">
-                <img src="./img/kangaroo.png" alt="">
+                <picture>
+                    <source type="image/avif" srcset="./img/kangaroo.avif">
+                    <source type="image/webp" srcset="./img/kangaroo.webp">
+                    <img src="./img/kangaroo.png" alt="">
+                </picture>
             </div>
             <div class="home__lion">
-                <img src="./img/lion.png" alt="">
+                <picture>
+                    <source type="image/avif" srcset="./img/lion.avif">
+                    <source type="image/webp" srcset="./img/lion.webp">
+                    <img src="./img/lion.png" alt="">
+                </picture>
             </div>
             <div class="home__dino">
-                <img src="./img/dino.png" alt="">
+                <picture>
+                    <source type="image/avif" srcset="./img/dino.avif">
+                    <source type="image/webp" srcset="./img/dino.webp">
+                    <img src="./img/dino.png" alt="">
+                </picture>
             </div>
         </section>
         <section class="about wrapper" id="about">
@@ -109,11 +122,31 @@
                 </div>
             
                 <div class="about__images">
-                    <img class="about__image about__image--active" src="./img/about_img1.png" alt="">
-                    <img class="about__image" src="./img/about_img2.png" alt="">
-                    <img class="about__image" src="./img/about_img3.png" alt="">
-                    <img class="about__image" src="./img/about_img4.png" alt="">
-                    <img class="about__image" src="./img/about_img5.png" alt="">
+                    <picture>
+                        <source type="image/avif" srcset="./img/about_img1.avif">
+                        <source type="image/webp" srcset="./img/about_img1.webp">
+                        <img class="about__image about__image--active" src="./img/about_img1.png" alt="">
+                    </picture>
+                    <picture>
+                        <source type="image/avif" srcset="./img/about_img2.avif">
+                        <source type="image/webp" srcset="./img/about_img2.webp">
+                        <img class="about__image" src="./img/about_img2.png" alt="">
+                    </picture>
+                    <picture>
+                        <source type="image/avif" srcset="./img/about_img3.avif">
+                        <source type="image/webp" srcset="./img/about_img3.webp">
+                        <img class="about__image" src="./img/about_img3.png" alt="">
+                    </picture>
+                    <picture>
+                        <source type="image/avif" srcset="./img/about_img4.avif">
+                        <source type="image/webp" srcset="./img/about_img4.webp">
+                        <img class="about__image" src="./img/about_img4.png" alt="">
+                    </picture>
+                    <picture>
+                        <source type="image/avif" srcset="./img/about_img5.avif">
+                        <source type="image/webp" srcset="./img/about_img5.webp">
+                        <img class="about__image" src="./img/about_img5.png" alt="">
+                    </picture>
                 </div>
         </section>
         <section class="gallery wrapper" id="gallery">
@@ -251,9 +284,16 @@
                     <p>or here: <a href="#">Instagram</a></p>
                     <p><a href="#">Telegram</a></p>
                 </div>
-
-                <img class="contacts__img--lion" src="./img/gallery1.png" alt="">
-                <img class="contacts__img--coroc" src="./img/contacts_img1.webp" alt="">
+                <picture>
+                    <source type="image/avif" srcset="./img/contacts_img2.avif">
+                    <source type="image/webp" srcset="./img/contacts_img2.webp">
+                    <img class="contacts__img--lion" src="./img/contacts_img2.png" alt="">
+                </picture>
+                <picture>
+                    <source type="image/avif" srcset="./img/contacts_img1.avif">
+                    <source type="image/webp" srcset="./img/contacts_img1.webp">
+                    <img class="contacts__img--coroc" src="./img/contacts_img1.png" alt="">
+                </picture>
             </div>
             
         </section>
