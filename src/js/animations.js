@@ -1,5 +1,10 @@
 //LOARED
 
+gsap.to('html', {
+    delay: 5,
+    overflow: 'unset',
+});
+
 gsap.from('.loader__clip-top, .loader__clip-bottom', 2, {
     delay: 1,
     height: '50vh',

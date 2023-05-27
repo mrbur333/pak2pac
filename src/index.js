@@ -7,3 +7,4 @@ import './js/nav';
 import './js/about';
 import './js/gallery';
 import './js/smoothScroll';
+
