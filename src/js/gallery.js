@@ -63,7 +63,7 @@ if (window.innerWidth < 1024) {
         if(img.length === 0)  return 
 
         gsap.from(img, {
-            y: -50,
+            x: 150,
             opacity: 0,
             duration: 0.5,
             ease: "easeIn",
@@ -77,9 +77,7 @@ if (window.innerWidth < 1024) {
 
         gsap.to(leftImg, {
             y: -150,
-            x: -50,
             rotate: 30,
-            duration: 2,
             ease: "easeIn",
             stagger: 0.1,
             scrollTrigger: {
@@ -92,11 +90,10 @@ if (window.innerWidth < 1024) {
 
         gsap.to(rightImg, {
             y: 150,
-            x: -150,
+            left: -300,
             rotate: -30,
-            duration: 2,
             ease: "easeIn",
-            stagger: 0.1,
+            stagger: 1,
             scrollTrigger: {
                 trigger: section,
                 scrub:1,
