@@ -28,7 +28,7 @@ function trackMousePosition(event) {
 }
 
 function fakeMousePosition(t) {
-    distanceFromCenter.x = Math.sin(t / 500) * window.innerWidth * 0.5;
+    distanceFromCenter.x = Math.sin(t / 500) * window.innerWidth * 0.2;
     distanceFromCenter.y = Math.cos(t / 500) * window.innerWidth * 0.2;
 }
 
@@ -56,7 +56,7 @@ function makeTransformString(y, z, rotate, skew) {
 
 function lerpV2(position, targetPosition) {
   position.x += (targetPosition.x - position.x) * 0.2;
-  position.y += (targetPosition.y - position.y) * 0.2;
+  position.y += (targetPosition.y - position.y) * 0.1;
 }
 
 function newV2(x = 0, y = 0) {

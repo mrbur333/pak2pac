@@ -18,9 +18,10 @@
 
 .gallery__section {
     max-height: 50vh;
-    & .s10 {
-        max-height: 100vh;
-    }
+}
+
+.gallery__section:last-child {
+    padding-bottom: 20em;
 }
 
 .gallery__section.s10 {
@@ -52,6 +53,9 @@
     .gallery__image {
         width: 30vw;
     }
+    .gallery__section:last-child {
+        padding-bottom: 50em;
+    }
 }
 
 @media (min-width: $laptop) { 
@@ -65,7 +69,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 880vw;
+        width: 800vw;
         padding: 0 0 0 30vw;
         height: 100dvh;
         max-height: 100dvh;
@@ -98,6 +102,9 @@
     section.gallery {
         height: 100dvh;
         max-height: 100dvh;
+    }
+    .gallery__section:last-child {
+        padding-bottom: 0;
     }
 }
 
