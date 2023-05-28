@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 3;
 }
 
 .home__text span{
@@ -24,6 +24,47 @@
     font-family: 'Barrio';
     opacity: 0;
 }
+
+.home__text span.home__main_text{
+    z-index: 50;
+}
+
+
+span.copy {
+    text-shadow: -2px -2px 0 #000, 
+                2px -2px 0 #000, 
+                -2px 2px 0 #000,
+                2px 2px 0 #000;
+    font-size: 20vw;
+    position: absolute;
+    line-height: 1;
+    height: 20vw;
+}
+
+.copy-1 {
+    transform: perspective(500px) translate3d(0, 0, -15px);
+    color: #f24c00;
+    z-index: 40;
+}
+
+.copy-2 {
+    transform: perspective(500px) translate3d(0, 0, -30px);
+    color: #9792e3;
+    z-index: 30;
+}
+
+.copy-3 {
+    transform: perspective(500px) translate3d(0, 0, -45px);
+    color: #fc7a1e;
+    z-index: 20;
+}
+
+.copy-4 {
+    transform: perspective(500px) translate3d(0, 0, -60px);
+    color: #eda96d;
+    z-index: 10;
+}
+
 .home__kangooroo {
     position: absolute;
     top: 42%;
@@ -41,8 +82,10 @@
     top: 50%;
     left: 100%;
     transform: translate(0, -60%);
+    z-index: 2;
     & img {
         width: 30vw;
+        
     }
 }
 

@@ -6,7 +6,7 @@
     height: auto;
     background-color: $bgGallery;
     top: 10em;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .gallery__container {
@@ -67,6 +67,8 @@
         justify-content: center;
         width: 880vw;
         padding: 0 0 0 30vw;
+        height: 100dvh;
+        max-height: 100dvh;
 
     }
 
@@ -75,6 +77,8 @@
         align-items: center;
         justify-content: center;
         width: 80vw;
+        height: 100dvh;
+        max-height: 100dvh;
     }
 
     .gallery__image {
@@ -92,7 +96,8 @@
     }
 
     section.gallery {
-        height: 100vh;
+        height: 100dvh;
+        max-height: 100dvh;
     }
 }
 

@@ -54,12 +54,25 @@ gsap.to('.loader', {
 gsap.to('.home__text span', {
     delay: 5,
     opacity: 1,
+    stagger: {
+        each: 0.2,
+    }
 });
 
-gsap.to('.home__text span', {
+gsap.from('.home__text .copy', {
     delay: 5.3,
-    scale: 2.5,
+    scale: 0.4,
+    stagger: {
+        each: 0.2,
+    }
 });
+/*
+gsap.to('.home__text span', {
+    delay: 5.5,
+    stagger: {
+        each: 0.5,
+    }
+});*/
 
 //HEADER
 
@@ -127,13 +140,24 @@ gsap.to('.home__dino', 3, {
 });
 
 gsap.registerPlugin(ScrollTrigger);
-
+/*
 gsap.to('.home__text span', {
     scrollTrigger: {
         scrub:1
     },
     y:-400,
 });
+*/
+/*
+gsap.to('.copy', {
+    //y: '4em',
+    //display: "none",
+    delay: 6,
+    //duration:1, 
+    stagger: {
+        each: 0.5,
+    }
+});*/
 
 gsap.to('.home__kangooroo,.home__lion,.home__dino', {
     scrollTrigger: {
