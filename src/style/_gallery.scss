@@ -21,7 +21,7 @@
 }
 
 .gallery__section:last-child {
-    padding-bottom: 30em;
+    padding-bottom: 40em;
 }
 
 
@@ -57,7 +57,10 @@
 @media (min-width: $laptop) { 
     .gallery { 
         position: relative;
-        flex-direction: row;    
+        flex-direction: row;
+        top: 0;
+        left: 0;
+        margin: 0;    
     }
 
     .gallery__container {
