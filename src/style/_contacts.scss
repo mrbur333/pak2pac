@@ -50,6 +50,9 @@
     padding: 0 0 1em 1em;
     font-family: 'Comfortaa';
     font-size: small;
+    & a {
+        color: $bgContact;
+    }
 }
 
 @media (min-width: $tablet) {
@@ -59,6 +62,11 @@
     .contacts__img--lion {
         display: block;
         inset: 26em 0 0 70vw;
+    }
+    .contacts__autor {
+        & a {
+            color: black;
+        }
     }
 }
 

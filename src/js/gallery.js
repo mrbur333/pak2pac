@@ -9,24 +9,25 @@ if (window.innerWidth < 1024) {
         if(img.length === 0)  return 
         
         gsap.from(img, {
-            y: -50,
+            x: 50,
             opacity: 0,
             duration: 0.5,
             ease: "easeIn",
             stagger: 0.1,
             scrollTrigger: {
                 trigger: section,
-                start: "left center",
+                start: "center bottom",
+                marks:true
             }
         });
 
         gsap.to(leftImg, {
-            y: -100,
+            y: -50,
             rotate: -30,
             ease: "easeOut",
             scrollTrigger: {
                 trigger: leftImg,
-                scrub:2,
+                scrub:1,
                 start: "bottom center",
                 }
         });
@@ -37,7 +38,7 @@ if (window.innerWidth < 1024) {
             ease: "easeOut",
             scrollTrigger: {
                 trigger: leftImg,
-                scrub:2,
+                scrub:1,
                 start: "bottom center",
                 }
         });
@@ -78,7 +79,7 @@ if (window.innerWidth < 1024) {
         gsap.to(leftImg, {
             y: -150,
             rotate: 30,
-            ease: "easeIn",
+            ease: "easeOut",
             stagger: 0.1,
             scrollTrigger: {
                 trigger: section,
@@ -92,7 +93,7 @@ if (window.innerWidth < 1024) {
             y: 150,
             left: -300,
             rotate: -30,
-            ease: "easeIn",
+            ease: "easeOut",
             stagger: 1,
             scrollTrigger: {
                 trigger: section,
