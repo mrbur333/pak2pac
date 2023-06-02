@@ -3,7 +3,6 @@
     width: 100%;
     background-color: $bgContact;
     overflow: hidden;
-    //top: 10em;
 }
 
 .contacts__container {
@@ -43,6 +42,14 @@
     border-radius: 50%;
     inset: 28em -2em;
     transform: rotate(343deg);
+}
+
+.contacts__autor {
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 1em 1em;
+    font-family: 'Comfortaa';
+    font-size: small;
 }
 
 @media (min-width: $tablet) {

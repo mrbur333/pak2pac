@@ -31,10 +31,6 @@
 
 
 span.copy {
-    /*text-shadow: -2px -2px 0 #000, 
-                2px -2px 0 #000, 
-                -2px 2px 0 #000,
-                2px 2px 0 #000;*/
     font-size: 20vw;
     position: absolute;
     line-height: 1;
@@ -97,5 +93,13 @@ span.copy {
     
     & img {
         width: 30vw;
+    }
+}
+
+@media (min-width: $desktop1) {
+    .home__dino {
+        & img {
+            width: 25vw;
+        }
     }
 }

@@ -212,3 +212,4 @@ contactTrigger.from('.contacts__header', { y:'4em', display: "none", duration:0.
             .from('p:nth-child(5)', {y:'4em', display: "none", duration:0.3})
             .from('.contacts__img--coroc', {x:'-15em', y:'5em', display: "none", duration:1})
             .from('.contacts__img--lion', {x:'15em', y:'-15em', display: "none", duration:1})
+            .from('.contacts__autor', {opacity:0, duration:1})
