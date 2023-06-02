@@ -128,7 +128,7 @@ gsap.to('.home__lion', 1, {
 
 gsap.to('.home__dino', 3, {
     delay: 5,
-    top: '70%',
+    top: '65%',
     ease: 'power3.in'
 });
 
